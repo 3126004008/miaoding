@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="filter_view">
+        <attr name="filter_title" format="string"/>
+        <!--<attr name="mWidth" format="integer"/>
+        <attr name="student" format="boolean"/>-->
+    </declare-styleable>
+</resources>

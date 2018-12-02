@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:filter="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_filter_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/icon_back"/>
+
+        <TextView
+            android:id="@+id/tv_filter_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#444444"/>
+
+    <com.jinhong.miaoding.ui.view.FilterView
+        android:id="@+id/view_explore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        filter:filter_title="探索模式"/>
+
+    <com.jinhong.miaoding.ui.view.FilterView
+        android:id="@+id/view_nearby_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        filter:filter_title="附近的人"/>
+
+    <com.jinhong.miaoding.ui.view.FilterView
+        android:id="@+id/view_nearby_thing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        filter:filter_title="附近的事"/>
+
+    <LinearLayout
+        android:id="@+id/ll_time_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间筛选"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_filter_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="返回"/>
+
+        <TextView
+            android:id="@+id/tv_filter_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="确认"/>
+
+    </LinearLayout>
+
+</LinearLayout>
